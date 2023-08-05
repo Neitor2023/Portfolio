@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu apple</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <nav class="nav-menua" id="navbar">
+    <label>
+      <input type="checkbox">
+      <div class="toggle" id="toggle-id">
+        <span class="common top_line"></span>
+        <span class="common middle_line"></span>
+        <span class="common bottom_line"></span>
+      </div>
+      <div class="sidebar">
+        <ul class="navigation">
+          <li class="active">
+            <a href="#home">
+              <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+              <span class="text">Home</span>
+            </a>
+          <li>
+            <a href="#skills">
+              <span class="icon"><ion-icon name="options-outline"></ion-icon></span>
+              <span class="text">Skills</span>
+            </a>
+          <li>
+            <a href="#education">
+              <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+              <span class="text">Education</span>
+            </a>
+          <li>
+            <a href="#experience">
+              <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
+              <span class="text">Experience</span>
+            </a>
+          <li>
+            <a href="#portfolio">
+              <span class="icon"><ion-icon name="folder-open-outline"></ion-icon></span>
+              <span class="text">Portfolio</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </label>
+    <!-- <a href="#" class="brand">
+      <span class="ullia-span-menua">Full Stack</span>
+      <span class="ullia-span-menua">Romy Garcia</span>
+    </a> -->
+    <ul class="ul-menua">
+      <li class="ul-brand">
+        <a class="brand" href="#">
+          <span class="ullia-span-menua">Romy G.</span>
+          <span class="ullia-span-menua">Full Stack</span>
+        </a>
+      </li>
+      <li class="ul-li-menua" style="--i:0;">
+        <a class="ul-li-a-menua" href="#home">
+          <span class="ullia-span-menua active">Home</span>
+          <span class="ullia-span-menua active"><i class='bx bxs-home'></i></span>
+        </a>
+      </li>
+      <!-- <li class="ul-li-menua" style="--i:1;">
+        <a class="ul-li-a-menua" href="#">
+          <span class="ullia-span-menua">About</span>
+          <span class="ullia-span-menua"><ion-icon name="person-outline"></ion-icon></span>
+        </a>
+      </li> -->
+      <li class="ul-li-menua" style="--i:1;">
+        <a class="ul-li-a-menua" href="#skills">
+          <span class="ullia-span-menua">Skills</span>
+          <span class="ullia-span-menua"><i class='bx bx-slider-alt'></i></span>
+        </a>
+      </li>
+      <li class="ul-li-menua" style="--i:2;">
+        <a class="ul-li-a-menua" href="#education">
+          <span class="ullia-span-menua">Education</span>
+          <span class="ullia-span-menua"><i class='bx bxs-graduation'></i></span>
+        </a>
+      </li>
+      <li class="ul-li-menua" style="--i:3;">
+        <a class="ul-li-a-menua" href="#experience">
+          <span class="ullia-span-menua">Experience</span>
+          <span class="ullia-span-menua"><i class='bx bxs-briefcase-alt-2'></i></span>
+        </a>
+      </li>
+      <li class="ul-li-menua" style="--i:4;">
+        <a class="ul-li-a-menua" href="#portfolio">
+          <span class="ullia-span-menua">Portfolio</span>
+          <span class="ullia-span-menua"><i class='bx bxs-folder'></i></span>
+        </a>
+      </li>
+      <li class="ul-li-menua" style="--i:5;" hidden>
+        <a class="ul-li-a-menua" href="#contact">
+          <span class="ullia-span-menua">Contact</span>
+          <span class="ullia-span-menua"><i class='bx bxs-envelope'></i></span>
+        </a>
+      </li>
+    </ul>
+    <div class="indicator" id="indicator"></div>
+    <a href="#contact" class="contac" id="autoActiveContac"><i class='bx bxs-hand-right bx-fade-right'></i>Contacta
+      me</a>
+    <a href="#" id="color-picker-btn">
+      <i class="fas fa-solid fa-paint-roller ul-li-a-menua"></i>
+    </a>
+    <a href="#" id="modoSwitch" onclick="toggleDarkMode()">
+      <i class="fas fa-sun ul-li-a-menua" id="modoIcon"></i>
+    </a>
+    <div class="color-picker">
+      <button class="color-option" id="close-btn"><i class="fa-solid fa-xmark"></i></button>
+      <button class="color-option red" data-color="red"></button>
+      <button class="color-option green" data-color="green"></button>
+      <button class="color-option blue" data-color="blue"></button>
+    </div>
+  </nav>
+
+  <section id="home">
+    <h3 class="title">Home</h3>
+    <div class="myname">
+      <p class="border mf-size">Romy Garcia</p>
+      <p class="wave mf-size">Romy Garcia</p>
+    </div>
+    <div class="fullstack">
+      <p class="border mf-size">Full Stack</p>
+      <p class="wave mf-size">Full Stack</p>
+    </div>
+  </section>
+  <section class="skills padd-15" id="skills">
+    <div class="section-title padd-15">
+      <h2 class="title">Skills</h2>
+    </div>
+    <div class="container">
+      <div class="skills padd-15">
+        <ul class="skill_ul">
+          <li class="skill_li" style="--i:1;">
+            <img class="skill_img" src="./images/Skills/Skill1.png">
+            <div class="content">
+              <h4>HTML, CSS, JAVASCRIPC</h4>
+              <!-- <P>liked your photo <br> <span>20 Apr at 05:10</span></P> -->
+            </div>
+          </li>
+          <li class="skill_li" style="--i:2;">
+            <img class="skill_react" src="./images/Skills/React.png">
+            <img class="skill_redux" src="./images/Skills/Redux.png">
+            <img class="skill_bootstrap" src="./images/Skills/Bootstrap.png">
+            <div class="content">
+              <h4>React, Redux, Bootstrap</h4>
+              <!-- <P>liked your photo <br> <span>20 Apr at 05:10</span></P> -->
+            </div>
+          </li>
+          <li class="skill_li" style="--i:3;">
+            <img class="skill_postgre" src="./images/Skills/PostgreSQL.png">
+            <img class="skill_node" src="./images/Skills/NodeJs.png">
+            <img class="skill_npm" src="./images/Skills/Npm.png">
+            <div class="content">
+              <h4>Node JS, PostgreSQL, Npm</h4>
+              <!-- <P>liked your photo <br> <span>20 Apr at 05:10</span></P> -->
+            </div>
+          </li>
+          <li class="skill_li" style="--i:4;">
+            <img class="skill_swagger" src="./images/Skills/Swagger-logo-horizontal.png">
+            <img class="skill_postman" src="./images/Skills/Postman.png">
+            <img class="skill_nodemon" src="./images/Skills/Nodemon.png">
+            <div class="content">
+              <h4>Swagger, Postman, Nodemon</h4>
+              <!-- <P>liked your photo <br> <span>20 Apr at 05:10</span></P> -->
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="education padd-15" id="education">
+    <h3 class="title">Educación</h3>
+    <div class="container_scroll">
+      <div class="card-scroll">
+        <div class="fondo">
+          <img class="img-fondo" src="/images/Academlo/Certificado-FullStack-Academlo.png">
+        </div>
+        <div class="details-education a185px">
+          <img src="/images/Academlo/Full-Stack-Web.png" class="title-fullstack">
+          <h2 class="title-academy">ACADEMLO, INC <br> Online Programming
+            School Of Technology And Computer Science</h2>
+          <div class="icono-fullstack">
+            <i class="fa-solid fa-code"></i>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-square-js"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-sharp fa-solid fa-database"></i>
+            <span class="graduated-the"><i class="fa-solid fa-graduation-cap yellow"></i> 19/06/2023</span>
+          </div>
+          <div class="frontback">
+            <span class="front-back">Front-end</span>
+            <span class="front-back orange">Back-end </span>
+            <a class="pg-web" target="_blank" href="https://www.academlo.com/curso-programacion-web-full-stack">Ver Pag.
+              Web</a>
+          </div>
+          <div class="synthesis">
+            <ul class="synthesis-ul">
+              <li>
+                <strong>1.- Fundamentos de desarrollo web</strong>
+              </li>
+              <li>
+                <strong>2.- Javascript Avanzado</strong>
+              </li>
+              <li>
+                <strong>3.- Desarrollo de APP web con React</strong>
+              </li>
+              <li>
+                <strong>4.- Programación backend con Node.js</strong>
+              </li>
+              <li>
+                <strong>5.- Backend avanzado y bases de datos</strong>
+              </li>
+              <li>
+                <strong>6.- Desarrollo Profecional</strong>
+              </li>
+            </ul>
+          </div>
+          <div class="see-certificate">
+            <a class="btn-certificate" target="_blank"
+              href="https://certificates.academlo.com/en/verify/08638984390387">Verificar Certificado</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- tecnologico -->
+      <div class="card-scroll">
+        <div class="fondo">
+          <img class="img-fondo" src="/images/TSU/Tecnologico-Fondo.png">
+        </div>
+        <div class="details-education a149px">
+          <img src="/images/TSU/Técnico-Superior-Universitario.png" class="title-fullstack">
+          <h2 class="title-academy">Instituto Universitario De Tecnología <br>
+            "Antonio José De Sucre" - Venezuela <br>
+            <i class="fa-solid fa-phone yellow"></i> +58 243-2452365 <br>
+            <i class="fa-solid fa-envelope yellow"></i>
+            division_controlestudio@utsmaracay.edu.ve
+          </h2>
+          </span>
+          <div class="frontback">
+            <i class="fa-solid fa-code"></i>
+            <i class="fa-sharp fa-solid fa-database"></i>
+            <span class="graduated-the"><i class="fa-solid fa-graduation-cap yellow"></i> 06/11/1997 <br> </span>
+            <span class="front-back"><img class="foxpro-icon" src="/images/TSU/Foxpro-icon.png">Foxpro</span>
+            <span class="front-back orange"><img class="foxpro-icon" src="/images/TSU/visual-basic.png">Visual
+              Basic</span>
+            <a class="pg-web" target="_blank" href="http://www.utsmaracay.edu.ve/">Ver Pag. Web</a>
+          </div>
+          <div class="synthesis">
+            <ul class="synthesis-ul">
+              <li>
+                <strong class="yellow">MATERIAS MÁS RELEVANTES</strong>
+              </li>
+              <li>
+                <strong>- Auditoria de Sistemas</strong>
+              </li>
+              <li>
+                <strong>- Contabilidad</strong>
+              </li>
+              <li>
+                <strong>- Teleprocesos</strong>
+              </li>
+              <li>
+                <strong>- Base de Datos</strong>
+              </li>
+              <li>
+                <strong>- Sistema Contable Computarizado</strong>
+              </li>
+              <li>
+                <strong>- Pasantias Profesionales</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card-scroll">
+        <div class="fondo">
+          <img class="img-fondo" src="/images/analista/Centro-de-Formación-Maracay-fondo.png">
+        </div>
+        <div class="details-education a170px">
+          <img src="/images/Analista/Analista-de-sistema.png" class="title-fullstack">
+          <h2 class="title-academy">Centro de Formación Maracay <br>
+            Venezuela
+          </h2>
+          <span class="graduated-the"><i class="fa-solid fa-graduation-cap yellow"></i> 12/01/1995 <br>
+            <i class="fa-solid fa-phone yellow"></i> +582432466597, +582432466783 <br>
+            <i class="fa-solid fa-envelope yellow"></i> cenformar@gmail.com
+          </span>
+          <div class="frontback">
+            <i class="fa-solid fa-code"></i>
+            <i class="fa-sharp fa-solid fa-database"></i>
+            <span class="front-back"> QBasic</span>
+            <span class="front-back"> Cobol</span>
+            <span class="front-back orange"> Pascal </span>
+            <a class="pg-web" target="_blank" href="https://cenformar.com.ve/">Ver Pag. Web</a>
+          </div>
+          <div class="synthesis">
+            <ul class="synthesis-ul">
+              <li>
+                <strong class="yellow">CONTENIDO DEL CURSO</strong>
+              </li>
+              <li>
+                <strong>- dBase</strong>
+              </li>
+              <li>
+                <strong>- Analisis y Diseño de Sistema</strong>
+              </li>
+              <li>
+                <strong>- Algoritmo y Diagrama de flujo</strong>
+              </li>
+              <li>
+                <strong>- Quick-Basic</strong>
+              </li>
+              <li>
+                <strong>- Cobol</strong>
+              </li>
+              <li>
+                <strong>- Pascal</strong>
+              </li>
+              <li>
+                <strong>- Proyecto Final</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="experience padd-15" id="experience">
+    <h3 class="title">Experiencia Laboral</h3>
+    <div class="container_scroll">
+      <div class="card-scroll">
+        <div class="fondo">
+          <img class="img-fondo" src="/images/Hidrocentro/Hidrocentro-fondo-Logo.png">
+        </div>
+        <div class="details-education a149px">
+          <img src="/images/Hidrocentro/Operador_Técnico.png" class="title-fullstack">
+          <h2 class="title-academy">HIDROCENTRO <br> C.A. Hidrológica Del Centro <br> CCO Centro De Control Operativo
+          </h2>
+          <div class="icono-fullstack">
+            <span class="graduated-the"><i class="fa-solid fa-briefcase yellow"></i> 06/08/2001 - 15/05/2018 / 17 años
+              <br>
+              <i class="fa-solid fa-phone yellow"></i> +5898 386 6991/ +5899 848 2136 <br>
+              <i class="fa-solid fa-phone yellow"></i> +5802 233 6166 <br>
+              <i class="fa-solid fa-envelope yellow"></i> info@hidrocentro.net
+            </span>
+          </div>
+          <div class="frontback">
+            <span class="front-back">Estadisticas</span>
+            <span class="front-back orange">Operador/Sistem.</span>
+            <a class="pg-web" target="_blank" href="https://hidrocentro.gob.ve/">Pag. Web</a>
+          </div>
+          <div class="synthesis">
+            <ul class="synthesis-ul">
+              <li>
+                <strong>- Atendí más de 150 clientes mensuales</strong>
+              </li>
+              <li>
+                <strong>- Genere más de 100 Informes Estadísticos</strong>
+              </li>
+              <li>
+                <strong>- Jefe de Personal de Guardia</strong>
+              </li>
+              <li>
+                <strong>- Manejo de Sistemas Remotos:</strong>
+              </li>
+              <li>
+                <strong>-- Sistemas de bombas hidráulicas</strong>
+              </li>
+              <li>
+                <strong>-- Sistemas de cierre y apertura de válvulas</strong>
+              </li>
+              <li>
+                <strong>-- Sistemas de llenado de tanques urbanos</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- tecnologico -->
+      <div class="card-scroll">
+        <div class="fondo">
+          <img class="img-fondo" src="/images/TYS/Centro-Solano-Plaza.png">
+        </div>
+        <div class="details-education a110px">
+          <img src="/images/Analista/Analista-de-sistema.png" class="title-fullstack">
+          <h2 class="title-academy">TECNOLOGíA Y SISTEMAS DE VENEZUELA T&S, S.A.</h2>
+          <span class="graduated-the"><i class="fa-solid fa-briefcase yellow"></i> 04/10/1999 - 31/07/2001 / 1 años y 9
+            meses<br>
+            <i class="fa-solid fa-phone yellow"></i>+58 (0212) 2168866 / (0212) 7618866
+          </span>
+          <div class="frontback">
+            <i class="fa-solid fa-code"></i>
+            <i class="fa-sharp fa-solid fa-database"></i>
+            <span class="front-back"><img class="foxpro-icon" src="/images/TSU/Foxpro-icon.png">Foxpro 2.6</span>
+            <span class="front-back orange">Analista</span>
+            <a class="pg-web" target="_blank" href="http://tsdevenezuela.com/">Ver Pag. Web</a>
+          </div>
+          <div class="synthesis">
+            <ul class="synthesis-ul">
+              <!-- <li>
+                    <strong>Automatización de los asientos contables de los acueductos de Hidrocentro, <br> mediante el sistema de facturación, <br> estos se ejecutaban automaticamente al momento del cierre de caja. </strong>
+                  </li> -->
+              <li>
+                <strong>Automatización de los asientos contables de los acueductos de Hidrocentro,</strong>
+              </li>
+              <li>
+                <strong>mediante el sistema de facturación,</strong>
+              </li>
+              <li>
+                <strong>los asientos se ejecutaban automaticamente al momento del cierre de caja. </strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card-scroll">
+        <div class="fondo">
+          <img class="img-fondo" src="/images/Politecnico-SM/SM-Fondo.png">
+        </div>
+        <div class="details-education a149px">
+          <img src="/images/Politecnico-SM/COORDINADOR-DE-INFORMATICA.png" class="title-fullstack">
+          <h2 class="title-academy">Intituto Universitario Politecnico <br>
+            “Santiago Mariño”, Venezuela
+          </h2>
+          <span class="graduated-the"><i class="fa-solid fa-briefcase yellow"></i> 25/11/1997 - 13/09/1999 / 2 años<br>
+            <i class="fa-solid fa-phone yellow"></i> +58 243-2357845 <br>
+            <i class="fa-solid fa-envelope yellow"></i> cemaracay@psm.edu.ve <br>
+            <i class="fa-solid fa-envelope yellow"></i> sdmaracay@psm.edu.ve <br>
+            <i class="fa-solid fa-envelope yellow"></i> controldeestudio@psmmaracay.edu.ve
+          </span>
+          <div class="frontback">
+            <i class="fa-solid fa-code"></i>
+            <i class="fa-sharp fa-solid fa-database"></i>
+            <span class="front-back"><img class="foxpro-icon" src="/images/TSU/Foxpro-icon.png"> Foxpro 2.6</span>
+            <span class="front-back orange"> Redes </span>
+            <a class="pg-web" target="_blank" href="http://www.psmmaracay.edu.ve/">Ver Pag. Web</a>
+          </div>
+          <div class="synthesis">
+            <ul class="synthesis-ul">
+              <li>
+                <strong class="yellow">Desarrolle los siguientes sistemas / FoxPro</strong>
+              </li>
+              <li>
+                <strong>- Sistema de control de caja</strong>
+              </li>
+              <li>
+                <strong>- Sistema de control de acceso</strong>
+              </li>
+              <li>
+                <strong>- Control de Estudio que contiene:</strong>
+              </li>
+              <li>
+                <strong>-- Planificación de año escolar</strong>
+              </li>
+              <li>
+                <strong>-- Gestion de notas</strong>
+              </li>
+              <li>
+                <strong>-- Certificados de notas e informenes</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="portfolio padd-15" id="portfolio">
+    <div class="section-title padd-15">
+      <h2 class="title">Portafolio</h2>
+    </div>
+    <div class="container_card">
+      <div class="card_ini">
+        <div class="card">
+          <div class="card_front" width="100%"
+            style="background-image: url(images/Portafolio/Swagger-Commerce.png) ; background-attachment: local; background-size: cover; background-position: left;">
+            <!-- <div class="bg"></div> -->
+            <div class="body_card_front">
+              <ul>
+                <li>
+                  <h2 class="title_card_front"><span>BACKEND / E-COMMERCE</span></h2>
+                </li>
+                <li>
+                  <h2 class="msj_card_front">Aplicación de comercio electrónico desarrollada con Node.js que incluye
+                    perfiles de usuario, compra de productos, carrito de compras, pedidos, validaciones y envio de
+                    facturas por correo electrónico. <br>
+                    <i class="fa-solid fa-hand-pointer"></i> <i class="fa-solid fa-hand-pointer"></i> <i
+                      class="fa-solid fa-hand-pointer"></i>
+                  </h2>
+                </li>
+                <!-- <li>
+                <div>
+                  <h2 class="msj_card_front"><span>Ver Mas...</span></h2>
+                </div>
+              </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="card_back">
+            <div class="body_card_back">
+              <div class="title_card_front a_link">
+                <h2><span><u>Tecnologias / E-COMMERCE</u></span></h2>
+              </div>
+              <div class="msj_card_front a_link">
+                <h4>Bcrypt, Cors, Dotenv, Ejs, Express, Express-validator, Jsonwebtoken Nodemailer, Pg, Pg-hstore,
+                  Sequelize, Swagger, Nodemon</h4>
+              </div>
+
+              <div class="btn_card_front a_link">
+                <button class="btn">
+                  <a href="https://dbdiagram.io/d/647be5e7722eb7749457f675" target="_blank">Diagram</a>
+                </button>
+                <br>
+                <button class="btn">
+                  <a href="https://github.com/Neitor2023/e-commerce-postgresql.git" target="_blank">Git Hud</a>
+                </button>
+                <br>
+                <button class="btn">
+                  <a href="https://romy-garcia-proyect-final.onrender.com/docs/" target="_blank">Swagger</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card_ini">
+        <div class="card">
+          <div class="card_front" width="100%"
+            style="background-image: url(images/Portafolio/React-E-Commerce.png); background-attachment:local; background-size:cover; background-position:left;">
+            <div class="body_card_front">
+              <ul>
+                <li>
+                  <h2 class="title_card_front"><span>REACT / E-COMMERCE</span></h2>
+                </li>
+                <li>
+                  <h2 class="msj_card_front">Este Ecommerce utiliza una API para facilitar la compra de productos,
+                    proporcionando diversas funciones relacionadas. <br>
+                    <i class="fa-solid fa-hand-pointer"></i> <i class="fa-solid fa-hand-pointer"></i> <i
+                      class="fa-solid fa-hand-pointer"></i>
+                  </h2>
+                </li>
+                <!-- <li>
+                <div>
+                  <h2 class="msj_card_front"><span>Ver Mas...</span></h2>
+                </div>
+              </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="card_back">
+            <div class="body_card_back">
+              <div class="title_card_front a_link">
+                <h2><span><u>Tecnologias / E-COMMERCE</u></span></h2>
+              </div>
+              <div class="msj_card_front a_link capital">
+                <h4>reduxjs/toolkit, axios, bootstrap, bootswatch, react-hook-form, react-redux, react-router-dom.
+                </h4>
+              </div>
+              <br>
+              <div class="btn_card_front a_link">
+                <button class="btn">
+                  <a href="https://github.com/Neitor2023/E-Commerce.git" target="_blank">Git Hud</a>
+                </button>
+                <button class="btn">
+                  <a href="https://romy-garcia-e-commerce.netlify.app/#/" target="_blank">Explorar</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card_ini">
+        <div class="card">
+          <div class="card_front" width="100%"
+            style="background-image: url(images/Portafolio/Pokemon.png); background-attachment:local; background-size:cover; background-position:center;">
+            <div class="body_card_front">
+              <ul>
+                <li>
+                  <h2 class="title_card_front"><span>REACT / POKEMON</span></h2>
+                </li>
+                <li>
+                  <h2 class="msj_card_front">Esta aplicación se conecta a la API de Pokémon para filtrar y mostrar
+                    las características de los personajes. <br>
+                    <i class="fa-solid fa-hand-pointer"></i> <i class="fa-solid fa-hand-pointer"></i> <i
+                      class="fa-solid fa-hand-pointer"></i>
+                  </h2>
+                </li>
+                <!-- <li>
+                <div>
+                  <h2 class="msj_card_front"><span>Ver Mas...</span></h2>
+                </div>
+              </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="card_back">
+            <div class="body_card_back">
+              <div class="title_card_front a_link">
+                <h2><span><u>Tecnologias / POKEMON</u></span></h2>
+              </div>
+              <div class="msj_card_front a_link capital">
+                <h4>reduxjs/toolkit, axios, react-dom, react-redux, react-router-dom</h4>
+              </div>
+              <br>
+              <div class="btn_card_front a_link">
+                <button class="btn">
+                  <a href="https://github.com/Neitor2023/Pokemon.git" target="_blank">Git Hud</a>
+                </button>
+                <button class="btn">
+                  <a href="https://romy-garcia-pokemon.netlify.app/" target="_blank">Explorar</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card_ini">
+        <div class="card">
+          <div class="card_front" width="100%"
+            style="background-image: url(images/Portafolio/React-Crud-Productos.png); background-attachment:local; background-size:cover; background-position:center;">
+            <div class="body_card_front">
+              <ul>
+                <li>
+                  <h2 class="title_card_front"><span>REACT / CRUD PRODUCTOS</span></h2>
+                </li>
+                <li>
+                  <h2 class="msj_card_front">Esta aplicación utiliza React y permite realizar operaciones de
+                    administración en productos, como el control de existencias y la asignación de precios. Es un
+                    CRUD que facilita la gestión de productos. <br>
+                    <i class="fa-solid fa-hand-pointer"></i> <i class="fa-solid fa-hand-pointer"></i> <i
+                      class="fa-solid fa-hand-pointer"></i>
+                  </h2>
+                </li>
+                <!-- <li>
+                <div>
+                  <h2 class="msj_card_front"><span>Haz clip para ver más...</span></h2>
+                </div>
+              </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="card_back">
+            <div class="body_card_back">
+              <div class="title_card_front a_link">
+                <h2><span><u>Tecnologias / CRUD PRODUCTOS</u></span></h2>
+              </div>
+              <div class="msj_card_front a_link capital">
+                <h4>axios, react-dom, react-hook-form</h4>
+              </div>
+              <br>
+              <div class="btn_card_front a_link">
+                <button class="btn">
+                  <a href="https://github.com/Neitor2023/CRUD-Productos.git" target="_blank">Git Hud</a>
+                </button>
+                <button class="btn">
+                  <a href="https://romy-garcia-crud-productos.netlify.app/" target="_blank">Explorar</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card_ini">
+        <div class="card">
+          <div class="card_front" width="100%"
+            style="background-image: url(images/Portafolio/Rick-and-Morty.png); background-attachment:local; background-size:cover; background-position:center;">
+            <div class="body_card_front">
+              <ul>
+                <li>
+                  <h2 class="title_card_front"><span>REACT / Rick and Morty</span></h2>
+                </li>
+                <li>
+                  <h2 class="msj_card_front">Una aplicación que se conecta a la API de Rick and Morty para mostrar
+                    información sobre los personajes de la serie según su ubicación en los diferentes planetas.<i
+                      class="fa-solid fa-hand-pointer"></i> <i class="fa-solid fa-hand-pointer"></i> <i
+                      class="fa-solid fa-hand-pointer"></i>
+                  </h2>
+                </li>
+                <!-- <li>
+                <div>
+                  <h2 class="msj_card_front"><span>Haz clip para ver más...</span></h2>
+                </div>
+              </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="card_back">
+            <div class="body_card_back">
+              <div class="title_card_front a_link">
+                <h2><span><u>Tecnologias / Rick and Morty</u></span></h2>
+              </div>
+              <div class="msj_card_front a_link capital">
+                <h4>testing-library/jest-dom, testing-library/react, testing-library/user-event, axios, react-dom,
+                  react-scripts, react-select, web-vitals.</h4>
+              </div>
+              <br>
+              <div class="btn_card_front a_link">
+                <button class="btn">
+                  <a href="https://github.com/Neitor2023/Rick-and-Morty?search=1" target="_blank">Git Hud</a>
+                </button>
+                <button class="btn">
+                  <a href="https://rick-and-morty-five-mu.vercel.app/" target="_blank">Explorar</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card_ini">
+        <div class="card">
+          <div class="card_front" width="100%"
+            style="background-image: url(images/Portafolio/Open-Weather.png); background-attachment:local; background-size:cover; background-position:center;">
+            <div class="body_card_front">
+              <ul>
+                <li>
+                  <h2 class="title_card_front"><span>REACT / Open Weather</span></h2>
+                </li>
+                <li>
+                  <h2 class="msj_card_front">Esta aplicación utiliza la ubicación del usuario para proporcionar
+                    información meteorológica relevante. Muestra datos sobre diversos factores meteorológicos. <br>
+                    <i class="fa-solid fa-hand-pointer"></i> <i class="fa-solid fa-hand-pointer"></i> <i
+                      class="fa-solid fa-hand-pointer"></i>
+                  </h2>
+                </li>
+                <!-- <li>
+                <div>
+                  <h2 class="msj_card_front"><span>Haz clip para ver más...</span></h2>
+                </div>
+              </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="card_back">
+            <div class="body_card_back">
+              <div class="title_card_front a_link">
+                <h2><span><u>Tecnologias / Open Weather</u></span></h2>
+              </div>
+              <div class="msj_card_front a_link capital">
+                <h4>axios, react-dom</h4>
+              </div>
+              <br>
+              <div class="btn_card_front a_link">
+                <button class="btn">
+                  <a href="https://github.com/Neitor2023/OpenWeather.git" target="_blank">Git Hud</a>
+                </button>
+                <button class="btn">
+                  <a href="https://romy-garcia-openweather.netlify.app/" target="_blank">Explorar</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card_ini">
+        <div class="card">
+          <div class="card_front" width="100%"
+            style="background-image: url(images/Portafolio/Fortune--Cookie.png); background-attachment:local; background-size:cover; background-position:center;">
+            <div class="body_card_front">
+              <ul>
+                <li>
+                  <h2 class="title_card_front"><span>REACT / Galletas de la Fortuna</span></h2>
+                </li>
+                <li>
+                  <h2 class="msj_card_front">Esta aplicación se conecta a una API utilizando Axios y muestra de
+                    forma aleatoria citas o frases de personas famosas. <br>
+                    <i class="fa-solid fa-hand-pointer"></i> <i class="fa-solid fa-hand-pointer"></i> <i
+                      class="fa-solid fa-hand-pointer"></i>
+                  </h2>
+                </li>
+                <!-- <li>
+                <div>
+                  <h2 class="msj_card_front"><span>Haz clip para ver más...</span></h2>
+                </div>
+              </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="card_back">
+            <div class="body_card_back">
+              <div class="title_card_front a_link">
+                <h2><span><u>Tecnologias / Galletas de la Fortuna</u></span></h2>
+              </div>
+              <div class="msj_card_front a_link capital">
+                <h4>react y react-dom.</h4>
+              </div>
+              <br>
+              <div class="btn_card_front a_link">
+                <button class="btn">
+                  <a href="https://github.com/Neitor2023/Galleta-De-La-Fortuna.git" target="_blank">Git Hud</a>
+                </button>
+                <button class="btn">
+                  <a href="https://romy-garcia-galleta-fortuna.netlify.app/" target="_blank">Explorar</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cntct-section padd-15" id="contact">
+    <div class="cntct-container">
+      <h2>Contacta me</h2>
+      <div class="cntct-row100">
+        <!-- <div class="cntct-col row">
+          <div class="cntct-inputBox">
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-phone"></i></div>
+              <h4>Contacta me al</h4>
+              <p>+593-963291299</p>
+            </div>
+          </div>
+        </div> -->
+        <div class="cntct-col">
+          <div class="cntct-inputBox">
+            <input type="text" name="" required="required">
+            <span class="cntct-text">Last Name</span>
+            <span class="cntct-line"></span>
+          </div>
+        </div>
+        <div class="cntct-col">
+          <div class="cntct-inputBox">
+            <input type="text" name="" required="required">
+            <span class="cntct-text">Email</span>
+            <span class="cntct-line"></span>
+          </div>
+        </div>
+        <div class="cntct-col">
+          <div class="cntct-inputBox">
+            <input type="text" name="" required="required">
+            <span class="cntct-text">Mobile</span>
+            <span class="cntct-line"></span>
+          </div>
+        </div>
+      </div>      
+      <div class="cntct-row100">
+        <div class="cntct-col">
+          <div class="cntct-inputBox">
+            <input type="text" name="" required="required">
+            <span class="cntct-text">First Name</span>
+            <span class="cntct-line"></span>
+          </div>
+        </div>
+        <div class="cntct-col">
+          <div class="cntct-inputBox">
+            <input type="text" name="" required="required">
+            <span class="cntct-text">Last Name</span>
+            <span class="cntct-line"></span>
+          </div>
+        </div>
+        <div class="cntct-col">
+          <div class="cntct-inputBox">
+            <input type="text" name="" required="required">
+            <span class="cntct-text">Email</span>
+            <span class="cntct-line"></span>
+          </div>
+        </div>
+        <div class="cntct-col">
+          <div class="cntct-inputBox">
+            <input type="text" name="" required="required">
+            <span class="cntct-text">Mobile</span>
+            <span class="cntct-line"></span>
+          </div>
+        </div>
+      </div>
+      <div class="cntct-row100">
+        <div class="cntct-col">
+          <div class="cntct-inputBox cntct-textarea">
+            <textarea required="required"></textarea>
+            <span class="cntct-text">Type Your Message Here...</span>
+            <span class="cntct-line"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cntct-row100">
+        <div class="cntct-col">
+          <input type="submit" value="send">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- <script src="style-switcher.js"></script> -->
+  <!-- <script src="script.js"></script> -->
+
+</body>
+
+</html>
