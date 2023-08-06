@@ -1132,18 +1132,20 @@ body {
 /* /////////////////////////////// Portafolio /////////////////////////////// */
 
 .container_card {
-  margin: auto;
-  max-width: 1200px;
-  display: flex;
+  /* margin: 0 20px;
+  padding: 20px 0; */
+  /* max-width: 1200px; */
+  /* display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
   background: var(--bg-black-900);
   perspective: 1000px;
-
-  /* position: relative;
-  width: 100%;
-  display: grid;  
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));   */
+  /* position: relative; */
+  /* width: 100%; */
+  margin-right: 15px ;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit,minmax(330px,3fr));  
 }
 
 .card_ini {
