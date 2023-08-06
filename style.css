@@ -14,7 +14,7 @@
 }
 body{
   /* background: #262626; */
-  /* min-height: 200vh; */
+  /* min-height: 100vh; */
   /* max-width: 1000px; */
   background: var(--background-color);
   color: var(--text-color);
@@ -467,7 +467,6 @@ input[type="checkbox"]:checked ~ .sidebar{
 /* Movimiento del focus segun el scroll */
 section{
   font-family: 'Poppins',sans-serif;
-  min-height: 100vh;
   display: block;
   justify-content: center;
   align-items: center;
@@ -783,15 +782,18 @@ body {
 .container_scroll{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
-  gap: 50px;
+  gap: 40px;
   justify-content: center;
   align-items: center;
+  
+  position: relative;
+  width: 100%;
+
 }
 
 /* tarjeta educacion Academlo */
 .card-scroll {
   position: relative;
-  width: 320px;
   height: 450px;
   overflow: hidden;
   border-radius: 20px;
@@ -1140,43 +1142,25 @@ body {
   flex-wrap: wrap; */
   background: var(--bg-black-900);
   perspective: 1000px;
-  /* max-width: 1000 px; */
+  
   position: relative;
   width: 100%;
   align-items: center;
   justify-content: center;
   display: grid;
-  /* gap: 20px; */
-  grid-template-columns: repeat(auto-fit,minmax(320px,3fr));  
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit,minmax(360px,3fr));  
 }
 
 .card_ini {
-  margin: 20px;
   perspective: 1000px;
 }
 
 .card_ini:hover .card {
   transform: rotateY(180deg);
 }
-.xxxx{
-  margin-top: 150px;
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  max-width: 1000px;
-  padding: 50px;
-  background: rgba(255,255,255,0.1);
-  box-shadow: 0 25px 45px rgba(0,0,0,0.1);
-  border: 1px solid rgba(255,255,255,0.25);
-  border-right: 1px solid rgba(255,255,255,0.1);
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  border-radius: 10px;
-  overflow: hidden;
-  backdrop-filter: blur(25px);
-}
+
 .card {
-  /* width: 291px; */
-  width: 338px;
   height: 355px;
   position: relative;
   transform-style: preserve-3d;
@@ -1365,12 +1349,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 150vh;
   width: 100vw;  
-  /* min-height: 100vh; */
+  min-height: 100vh;
   padding: 20px;
   /* width: 100%; */
   background: #001923;  
+  margin-top: 200px;
 }
 .cntct-section::before{
   margin-top: 200px;
@@ -1408,6 +1393,7 @@ body {
   backdrop-filter: blur(25px);
 }
 .cntct-container::before{
+  margin-top: 200px;
   content: '';
   position: absolute;
   top: 0;
