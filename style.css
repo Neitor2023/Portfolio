@@ -47,7 +47,7 @@ body{
   color: #fff;
   font-family: 'Poppins',sans-serif;
   position: absolute;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .boder{
@@ -218,21 +218,29 @@ body.dark-mode #modoIcon:before {
   background-color: #f70606;
 }
 /* responsive 1184 */
-@media screen and (max-width: 1183px){
+@media screen and (min-width: 1116px) and (max-width: 1183px){
   .ul-li-a-menua{
     padding: 5px 15px;
   }
+  .mf-size{
+    font-size: 4.5rem;
+  }     
 }
-@media screen and (max-width: 1115px){
+@media screen and (min-width: 1046px) and (max-width: 1115px){
   .ul-li-a-menua{
     padding: 5px 10px;
   }
+  .mf-size{
+    font-size: 4rem;
+  }       
 }
-@media screen and (max-width: 1045px){
+@media screen and (min-width: 948px) and (max-width: 1045px){
   .ul-li-a-menua{
     padding: 5px 3px;
+  }   
+  .mf-size{
+    font-size: 3.5rem;
   }
-  
 }
 @media screen and (max-width: 947px){
   .ul-li-a-menua{
@@ -241,18 +249,24 @@ body.dark-mode #modoIcon:before {
   .brand{
     display: none;
   }
-  .name{
-    height:  140px;
+  .h-container{
+    display: block;
   }
   .mf-size{
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
+  .name{
+    height: 50px;
+  }  
 }
 
 @media screen and (max-width: 904px){
   .ul-li-a-menua{
     padding: 5px 5px;
   }
+  /* .mf-size{
+    font-size: 1rem;
+  } */
 }
 
 @media screen and (max-width: 834px){
@@ -272,6 +286,9 @@ body.dark-mode #modoIcon:before {
   .nav-menua .brand{
     font-size: 1.8em;
   }
+  /* .mf-size{
+    font-size: 2.5rem;
+  }   */
 }
 
 @media screen and (max-width: 767px){
@@ -283,33 +300,30 @@ body.dark-mode #modoIcon:before {
 }
 
 @media screen and (max-width: 694px){
-  .name{
-    height:  100px;
-  }
-  .mf-size{
+  /* .name{
+    height:  50px;
+  } */
+  /* .mf-size{
     font-size: 4rem;
-  }
+  } */
+  /* .h-container{
+    display: block;
+  } */
   .card-scroll{
     flex: 0 0 100%;
     max-width: 100%;
   }
 }
-@media screen and (max-width: 600px){
+
+@media screen and (max-width: 450px){
   .mf-size{
     font-size: 3rem;
   }
-}
-@media screen and (max-width: 500px){
-  .mf-size{
-    font-size: 2rem;
-  }
-  .name{
-    height:  50px;
-  }
+
 }
 @media screen and (max-width: 411px){
   .mf-size{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .en-es{
@@ -321,9 +335,18 @@ body.dark-mode #modoIcon:before {
     width: 23px;
   }
 }
+.mf-size{
+  font-size: 2rem;
+}
+.name{
+  height: 35px;
+}  
 @media screen and (max-width: 339px){
   .fas{
     width: 22px;
+  }
+  .mf-size{
+    font-size: 1.5rem;
   }
 }
 /* menu lateral */
@@ -979,26 +1002,16 @@ body {
   max-width: 20px;
 }
 /* *****************************skillis*********************** */
-.container {
+.container{
   max-width: 1100px;
-  /* width: 100%; */
-  margin: auto;
-  margin-left: 35%;
-  
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
 
-}
-.skillsx{
-  flex: 0 0 40%;
-  max-width: 40%;
-  margin-top: 40px;
-}
 /* segundo skill */
 .skill_ul {
-  /* left: 100px; */
-  margin-left: 80px;
-  /* padding-left: 270px; */
   position: relative;
   transform-style: preserve-3d;
   perspective: 500px;
@@ -1148,12 +1161,12 @@ body {
   
   position: relative;
   /* width: 100%; */
-  align-items: center;
-  justify-content: center;
-  display: grid;
   gap: 40px;
   padding-bottom: 0;
+  display: grid;
   grid-template-columns: repeat(auto-fit,minmax(320px,1fr));  
+  align-items: center;
+  justify-content: center;
 }
 
 .card_ini {
