@@ -28,7 +28,9 @@ body{
   /* justify-content: center; */
   overflow-x: hidden;
 }
-
+.h-container{
+  display: block;
+}
 .myname{
   margin-top: 30px;
   margin-left: 140px;
@@ -1151,7 +1153,7 @@ body {
   display: grid;
   gap: 40px;
   padding-bottom: 0;
-  grid-template-columns: repeat(auto-fit,minmax(360px,3fr));  
+  grid-template-columns: repeat(auto-fit,minmax(360px,1fr));  
 }
 
 .card_ini {
