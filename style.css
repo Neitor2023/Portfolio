@@ -26,6 +26,7 @@ body{
   /* width: 100vw; */
   /* align-items: center; */
   /* justify-content: center; */
+  overflow: hidden;
 }
 
 .myname{
@@ -1346,7 +1347,6 @@ body {
   padding: 20px;
   /* width: 100%; */
   background: #001923;
-  overflow: hidden;
 }
 .cntct-section::before{
   content: '';
