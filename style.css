@@ -1129,18 +1129,23 @@ body {
   color: #888;
   /* color: var(--skin-color); */
 }
-/* /////////////////////////////// Portafokio /////////////////////////////// */
+/* /////////////////////////////// Portafolio /////////////////////////////// */
 
 .container_card {
-  max-width: 1200px;
   margin: auto;
-  /* margin-top: 300px; */
-  perspective: 1000px;
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   background: var(--bg-black-900);
+  perspective: 1000px;
+
+  /* position: relative;
+  width: 100%;
+  display: grid;  
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));   */
 }
+
 .card_ini {
   margin: 20px;
   perspective: 1000px;
@@ -1149,10 +1154,25 @@ body {
 .card_ini:hover .card {
   transform: rotateY(180deg);
 }
-
+.xxxx{
+  margin-top: 150px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1000px;
+  padding: 50px;
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-right: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  backdrop-filter: blur(25px);
+}
 .card {
   /* width: 291px; */
-  width: 438px;
+  width: 338px;
   height: 355px;
   position: relative;
   transform-style: preserve-3d;
