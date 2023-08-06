@@ -1137,16 +1137,17 @@ body {
   padding: 20px 0; */
   /* max-width: 1200px; */
   /* display: flex;
-  justify-content: center;
   flex-wrap: wrap; */
   background: var(--bg-black-900);
   perspective: 1000px;
+  max-width: 1000px;
   /* position: relative; */
-  /* width: 100%; */
-  margin-right: 15px ;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit,minmax(330px,3fr));  
+  /* gap: 20px; */
+  grid-template-columns: repeat(auto-fit,minmax(320px,3fr));  
 }
 
 .card_ini {
