@@ -1342,9 +1342,9 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;  
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 20px;
-  width: 100%;
+  /* width: 100%; */
   background: #001923;
 }
 .cntct-section::before{
