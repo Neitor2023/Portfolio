@@ -472,6 +472,7 @@ section{
   align-items: center;
   /* font-size: 40px; */
   font-weight: 700; 
+  
 }
 section:nth-child(odd){
   /* background: #323946; */
@@ -1144,11 +1145,12 @@ body {
   perspective: 1000px;
   
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   align-items: center;
   justify-content: center;
   display: grid;
   gap: 40px;
+  padding-bottom: 0;
   grid-template-columns: repeat(auto-fit,minmax(360px,3fr));  
 }
 
@@ -1351,10 +1353,9 @@ body {
   align-items: center;
   height: 150vh;
   width: 100vw;  
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 20px;
-  /* width: 100%; */
-  background: #001923;  
+  width: 100%;  
   margin-top: 200px;
 }
 .cntct-section::before{
