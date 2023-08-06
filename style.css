@@ -1369,9 +1369,10 @@ body {
   /* min-height: 100vh; */
   padding: 20px;
   /* width: 100%; */
-  background: #001923;
+  background: #001923;  
 }
 .cntct-section::before{
+  margin-top: 200px;
   content: '';
   position: absolute;
   width: 400px;
@@ -1390,7 +1391,7 @@ body {
   transform: translate(420px, 180px);
 }
 .cntct-container{
-  margin-top: 150px;
+  margin-top: 200px;
   position: relative;
   z-index: 1;
   width: 100%;
