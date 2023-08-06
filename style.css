@@ -1140,8 +1140,8 @@ body {
   flex-wrap: wrap; */
   background: var(--bg-black-900);
   perspective: 1000px;
-  max-width: 1000px;
-  /* position: relative; */
+  /* max-width: 1000 px; */
+  position: relative;
   width: 100%;
   align-items: center;
   justify-content: center;
