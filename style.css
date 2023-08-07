@@ -256,7 +256,7 @@ body.dark-mode #modoIcon:before {
     font-size: 3.5rem;
   }
   .name{
-    height: 50px;
+    height: 80px;
   }  
 }
 
@@ -264,9 +264,6 @@ body.dark-mode #modoIcon:before {
   .ul-li-a-menua{
     padding: 5px 5px;
   }
-  /* .mf-size{
-    font-size: 1rem;
-  } */
 }
 
 @media screen and (max-width: 834px){
@@ -286,9 +283,6 @@ body.dark-mode #modoIcon:before {
   .nav-menua .brand{
     font-size: 1.8em;
   }
-  /* .mf-size{
-    font-size: 2.5rem;
-  }   */
 }
 
 @media screen and (max-width: 767px){
@@ -300,21 +294,56 @@ body.dark-mode #modoIcon:before {
 }
 
 @media screen and (max-width: 694px){
-  /* .name{
-    height:  50px;
-  } */
-  /* .mf-size{
-    font-size: 4rem;
-  } */
-  /* .h-container{
-    display: block;
-  } */
   .card-scroll{
     flex: 0 0 100%;
     max-width: 100%;
   }
 }
-
+@media screen and (max-width: 670px){
+  .content{
+    display: none;
+  }
+  .skill_ul .skill_li{
+    width: 370px;
+  }
+}
+@media screen and (max-width: 550px){
+  .skill_ul .skill_li{
+    width: 330px;
+  }
+  .skill_ul .skill_react{
+    max-width: 70px;
+  }
+  .skill_ul .skill_postgre{
+    max-width: 70px;
+  }
+  .skill_ul .skill_swagger {
+    max-width: 150px;
+  }
+}
+@media screen and (max-width: 495px){
+  .skill_ul .skill_li{
+    width: 260px;
+  }
+  .skill_ul .skill_img{
+    max-width: 230px;
+  }  
+  .skill_ul .skill_redux {
+    max-width: 70px;
+  }
+  .skill_ul .skill_bootstrap {
+    max-width: 50px;
+  }
+  .skill_ul .skill_node{
+    max-width: 70px;
+  }
+  .skill_ul .skill_npm{
+    max-width: 40px;
+  }  
+  .skill_ul .skill_nodemon{
+    display: none;
+  }
+}
 @media screen and (max-width: 450px){
   .mf-size{
     font-size: 3rem;
@@ -325,28 +354,61 @@ body.dark-mode #modoIcon:before {
   .mf-size{
     font-size: 2.5rem;
   }
-
   .en-es{
     display: none;
+  }
+  .skill_ul .skill_li{
+    width: 200px;
+    height: 70px;
+  }
+  .skill_ul .skill_img{
+    max-width: 170px;
+  }  
+  .skill_ul .skill_react{
+    max-width: 40px;
+  }
+  .skill_ul .skill_redux {
+    max-width: 50px;
+  }
+  .skill_ul .skill_bootstrap {
+    max-width: 30px;
+  }
+  .skill_ul .skill_postgre{
+    max-width: 40px;
+  }  
+  .skill_ul .skill_node{
+    max-width: 40px;
+  }
+  .skill_ul .skill_npm{
+    max-width: 40px;
+  }  
+  .skill_ul .skill_nodemon{
+    display: none;
+  }
+  .skill_ul .skill_postman{
+    max-width: 40px;
+  }
+  .skill_ul .skill_swagger {
+    max-width: 100px;
   }
 }
 @media screen and (max-width: 348px){
   .fas{
     width: 23px;
   }
+  /* .mf-size{
+    font-size: 2rem;
+  }
+  .name{
+    height: 35px;
+  }   */
 }
-.mf-size{
-  font-size: 2rem;
-}
-.name{
-  height: 35px;
-}  
 @media screen and (max-width: 339px){
   .fas{
     width: 22px;
   }
   .mf-size{
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 /* menu lateral */
@@ -1021,7 +1083,7 @@ body {
   transition: 0.5s;
 }
 
-.skill_li {
+.skill_li{
   position: relative;
   list-style: none;
   width: 450px;
@@ -1074,7 +1136,7 @@ body {
   border-radius: 4px;
 }
 
-.skill_react {
+.skill_react{
   max-width: 100px;
   border-radius: 4px;
 }
