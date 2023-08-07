@@ -1423,6 +1423,15 @@ body {
   top: 0;
 }
 /* ************************** Contac ********************************** */
+.cntct-input{
+  background: none;
+  font-weight: 1000;
+  font-size: 0.9rem;
+  border: none;
+}
+.cntct-100{
+  width: 100%;
+}
 .cntct-section{
   font-family: 'Poppins', sans-serif;
   display: flex;
