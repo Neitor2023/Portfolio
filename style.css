@@ -970,7 +970,9 @@ body {
   max-width: 290px;
   left: 0;
 }
-
+.title-coordinador {
+  max-width: 260px;
+}
 .title-academy {
   font-size: 1em;
   color: #fff;
