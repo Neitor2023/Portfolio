@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <title>Menu apple</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -11,48 +12,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <script src="script.js" defer></script>
+  <!-- <script src="script.js"></script> -->
 </head>
 
 <body>
   <nav class="nav-menua" id="navbar">
-    <label>
-      <input type="checkbox">
-      <div class="toggle" id="toggle-id">
-        <span class="common top_line"></span>
-        <span class="common middle_line"></span>
-        <span class="common bottom_line"></span>
-      </div>
-      <div class="sidebar">
-        <ul class="navigation">
-          <li class="active">
-            <a href="#home">
-              <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-              <span class="text">Home</span>
-            </a>
-          <li>
-            <a href="#skills">
-              <span class="icon"><ion-icon name="options-outline"></ion-icon></span>
-              <span class="text">Skills</span>
-            </a>
-          <li>
-            <a href="#education">
-              <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
-              <span class="text">Education</span>
-            </a>
-          <li>
-            <a href="#experience">
-              <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
-              <span class="text">Experience</span>
-            </a>
-          <li>
-            <a href="#portfolio">
-              <span class="icon"><ion-icon name="folder-open-outline"></ion-icon></span>
-              <span class="text">Portfolio</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </label>
+
     <ul class="ul-menua">
       <li class="ul-brand">
         <a class="brand" href="#">
@@ -61,7 +26,7 @@
         </a>
       </li>
       <li class="ul-li-menua" style="--i:0;">
-        <a class="ul-li-a-menua" href="#home">
+        <a class="ul-li-a-menua" href="#">
           <span class="ullia-span-menua active">Home</span>
           <span class="ullia-span-menua active"><i class='bx bxs-home'></i></span>
         </a>
@@ -90,42 +55,195 @@
           <span class="ullia-span-menua"><i class='bx bxs-folder'></i></span>
         </a>
       </li>
-      <li class="ul-li-menua" style="--i:5;" hidden>
+      <li class="ul-li-menua" style="--i:5;">
+        <a href="#contact" class="contac" id="autoActiveContac"><i class='bx bxs-hand-right bx-fade-right'></i>Contacta
+          me
+        </a>
+      </li>
+      <li class="ul-li-menua" style="--i:6;">
+        <label class="ul-li-menua" for="dark-mode-toggle">
+          <i class="fas fa-sun ul-li-menua ul-li-a-menua modoIcon" id="modoIcon"></i> <!-- Icono de sol de Font Awesome -->
+        </label>
+      </li>
+      <li class="ul-li-menua" style="--i:6;" hidden>
         <a class="ul-li-a-menua" href="#contact">
           <span class="ullia-span-menua">Contact</span>
           <span class="ullia-span-menua"><i class='bx bxs-envelope'></i></span>
         </a>
       </li>
+      <li>
+        <label>
+          <input type="checkbox">
+          <div class="toggle" id="toggle-id">
+            <span class="common top_line"></span>
+            <span class="common middle_line"></span>
+            <span class="common bottom_line"></span>
+          </div>
+          <div class="sidebar">
+            <ul class="navigation">
+              <li class="active">
+                <a href="#">
+                  <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                  <span class="text">Home</span>
+                </a>
+              <li>
+                <a href="#skills">
+                  <span class="icon"><ion-icon name="options-outline"></ion-icon></span>
+                  <span class="text">Skills</span>
+                </a>
+              <li>
+                <a href="#education">
+                  <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+                  <span class="text">Education</span>
+                </a>
+              <li>
+                <a href="#experience">
+                  <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
+                  <span class="text">Experience</span>
+                </a>
+              <li>
+                <a href="#portfolio">
+                  <span class="icon"><ion-icon name="folder-open-outline"></ion-icon></span>
+                  <span class="text">Portfolio</span>
+                </a>
+              </li>
+              <li>
+                <a href="#contact">
+                  <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                  <span class="text">Contactos</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </label>
+      </li>
     </ul>
-    <div class="indicator" id="indicator"></div>
-    <a href="#contact" class="contac" id="autoActiveContac"><i class='bx bxs-hand-right bx-fade-right'></i>Contacta
-      me</a>
-    <a href="#" id="color-picker-btn">
+
+    <!-- <a href="#" id="color-picker-btn">
       <i class="fas fa-solid fa-paint-roller ul-li-a-menua"></i>
-    </a>
-    <a href="#" id="modoSwitch" onclick="toggleDarkMode()">
-      <i class="fas fa-sun ul-li-a-menua" id="modoIcon"></i>
-    </a>
+    </a> -->
     <div class="color-picker">
       <button class="color-option" id="close-btn"><i class="fa-solid fa-xmark"></i></button>
       <button class="color-option red" data-color="red"></button>
       <button class="color-option green" data-color="green"></button>
       <button class="color-option blue" data-color="blue"></button>
     </div>
+    <div class="indicator" id="indicator"></div>
   </nav>
-
-  <section class="home padd-15" id="home">
-    <div class="section-title padd-15">
-      <h2 class="title">Home</h2>
-    </div>
-    <div class="h-container">
-      <div class="name">
-        <p class="border mf-size">Romy Garcia</p>
-        <p class="wave mf-size">Romy Garcia</p>
+  <section class="section-top">
+  </section>
+  <section class="home" id="home">
+    <div class="hm-container">
+      <div class="romy tag">
+        <p class="boder mf-sizex">Romy</p>
+        <p class="wave mf-sizex">Romy</p>
       </div>
-      <div class="name">
-        <p class="border mf-size">Full Stack</p>
-        <p class="wave mf-size">Full Stack</p>
+      <div class="garcia tag">
+        <p class="boder mf-sizex">Garcia</p>
+        <p class="wave mf-sizex">Garcia</p>
+      </div>
+      <div class="full tag">
+        <p class="boder mf-sizex">Full</p>
+        <p class="wave mf-sizex">Full</p>
+      </div>
+      <div class="stack tag">
+        <p class="boder mf-sizex">Stack</p>
+        <p class="wave mf-sizex">Stack</p>
+      </div>
+      <div class="lema tag">
+        <p class="lm-size">Mi valor excepcional = Entusiasta por la tecnología + Aprendizajes rápidos + Soluciones
+          impactantes.</p>
+      </div>
+      <div class="yo-soy">
+        <div class="CardButtOnen">
+          <span class="bgAnimate"></span>
+          <span class="bgAnimate2"></span>
+          <div class="page one">
+            <div class="text one">
+              <h2 class="text animation" style="--i:0; --m:12;">Hola, soy Romy Wilfredo</h2>
+              <h2 class="text animation" style="--i:1; --m:13;">Garcia Espinoza</h2>
+              <p class="text animation" style="--i:2; --m:14;">Analista de Sistema 1995</p>
+              <p class="text animation" style="--i:3; --m:15;">TSU en Informatica 1997</p>
+              <p class="text animation" style="--i:4; --m:16;">Full Stack 2023</p>
+              <p class="text animation" style="--i:5; --m:17;">Backend 2023</p>
+              <p class="text animation" style="--i:6; --m:18;">Frotend 2023</p>
+            </div>
+          </div>
+          <button onclick="btnStar()" class="btn-star" style="--i:7; --m:28">=<i
+              class='bx bxs-hand-right bx-fade-right'></i></button>
+          <img class="img1 animation" src="./images/Tarjeta-de-presentacion/Full-Stack.png" alt=""
+            style="--i:8; --m:19;">
+          <div class="page two">
+            <div class="text">
+              <h2 class="text animation" style="--i:9; --j:0;">LABORE COMO:</h2>
+              <h3 class="text animation" style="--i:10; --j:1;">- Operador Técnico</h3>
+              <h3 class="text animation tab-a" style="--i:11; --j:2;">Hidrocentro C.A. 2018</h3>
+              <h3 class="text animation tab" style="--i:12; --j:3;">- Analista de Sistema 2001</h3>
+              <h4 class="text animation tab-e" style="--i:13; --j:4;">Tecnología de Venezuela</h4>
+              <h4 class="text animation tab" style="--i:14; --j:5;">- Coordinador de</h4>
+              <h4 class="text animation tab-e" style="--i:14; --j:5;">Informatica 1999</h4>
+              <h4 class="text animation tab-e" style="--i:15; --j:6;">Politécnico</h4>
+              <h4 class="text animation tab" style="--i:15; --j:6;">"Santiago</h4>
+              <h5 class="text animation tab-e" style="--i:16; --j:7;">Mariño"</h5>
+            </div>
+          </div>
+          <button onclick="btnNext()" class="btn-next" style="--i:17; --j:9;">=<i
+              class='bx bxs-hand-right bx-fade-right'></i></button>
+          <img class="img2 animation" style="--i:21; --j:8;" src="./images/Tarjeta-de-presentacion/imagen1.png" alt="">
+          <div class="page three">
+            <div class="text">
+              <h2 class="text animation" style="--k:0; --j:10;">EXPERIENCIA EN AÑOS:</h2>
+              <p class="text animation" style="--k:1; --j:11;">- Academlo.. 1</p>
+              <p class="text animation" style="--k:2; --j:12;">-Tecnología de Venezuela.. 1.9</p>
+              <p class="text animation tab-d" style="--k:3; --j:13;">-Politécnico Santiago Mariño..2</p>
+              <p class="text animation tab-c" style="--k:4; --j:14;">-Tecnologíco Antonio José.. 3</p>
+              <p class="text animation tab-a" style="--k:5; --j:15;">-Centro de Formación..1.3</p>
+              <p class="text animation tab-b" style="--k:6; --j:16;">-Encargos varios.. 3</p>
+            </div>
+          </div>
+          <button onclick="btnContinue()" class="btn-Continue" style="--k:7; --j:17;">=<i
+              class='bx bxs-hand-right bx-fade-right'></i></button>
+          <img class="img3 animation" style="--k:8; --j:18;" src="./images/Tarjeta-de-presentacion/12-ANOS.png" alt="">
+          <img class="img4 animation" style="--k:9; --j:19;" src="./images/Tarjeta-de-presentacion/Reloj.png" alt="">
+          <div class="page four">
+            <div class="text">
+              <img class="img5 animation" style="--k:10; --m:0;" src="./images/Tarjeta-de-presentacion/Habilidades.png"
+                alt="">
+              <h4 class="text animation" style="--k:11; --m:1;">HABILIDADES BLANDAS:</h4>
+              <h5 class="text animation" style="--k:12; --m:2;">- Comprometido con la Calidad</h5>
+              <h5 class="text animation" style="--k:13; --m:3;">- Con Flexibilidad Tecnológica</h5>
+              <h5 class="text animation" style="--k:14; --m:4;">- Con Pensamiento Crítico</h5>
+              <h5 class="text animation" style="--k:15; --m:5;">- Con Ética Profesional</h5>
+              <h5 class="text animation" style="--k:16; --m:6;">- Con Buena Gestión en:</h5>
+              <h5 class="text animation tab-d" style="--k:17; --m:7;">Trabajo en Equipo,</h5>
+              <h5 class="text animation tab-d" style="--k:18; --m:8;">Estrés y Tiempo</h5>
+              <h5 class="text animation" style="--k:19; --m:9;">- Comunicativo</h5>
+              <h5 class="text animation" style="--k:20; --m:10;">- Autodidacta</h5>
+              <h5 class="text animation" style="--k:21; --m:11;">- Creativo</h5>
+            </div>
+          </div>
+          <button onclick="btnEnd()" class="btn-end" style="--k:22; --m:12;">=<i
+              class='bx bxs-hand-right bx-fade-right'></i></button>
+          <img class="img6 animation" style="--n:0; --m:13;" src="./images/Tarjeta-de-presentacion/Flecha-Roja.png"
+            alt="">
+          <div class="page five">
+            <div class="text">
+              <h3 class="text animation" style="--n:1; --m:14;">FORTALEZAS:</h3>
+              <h5 class="text animation" style="--n:2; --m:15;">- Con Buena Gestión de:</h5>
+              <h5 class="text animation tab-f" style="--n:3; --m:16;">Control de Versiones,</h5>
+              <h5 class="text animation tab-f" style="--n:4; --m:17;">Resolución de Problemas,</h5>
+              <h5 class="text animation tab-f" style="--n:5; --m:18;">Herramientas y Proyectos</h5>
+              <h5 class="text animation" style="--n:6; --m:19;">- Aprendizaje Continuo</h5>
+              <h5 class="text animation" style="--n:7; --m:20;">- Conocimientos en Tecnológica</h5>
+              <h5 class="text animation" style="--n:8; --m:21;">- Experiencia en desarrollo Web</h5>
+              <h5 class="text animation" style="--n:9; --m:22;">- Conocimientos en Bases de Datos</h5>
+              <h3 class="text animation" style="--n:10; --m:23;">DEBILIDADES: Ingles</h3>
+              <h5 class="text animation" style="--n:11; --m:24;">(Actualmente haciendo cursos)</h5>
+            </div>
+          </div>
+          <img class="img7 animation" style="--n:0; --m:13;" src="./images/Tarjeta-de-presentacion/Debilidades.png"
+            alt="">
+        </div>
       </div>
     </div>
   </section>
@@ -133,7 +251,7 @@
     <div class="section-title padd-15">
       <h2 class="title">Skills</h2>
     </div>
-    <div class="container">
+    <div class="s-container">
       <div class="skills padd-15">
         <ul class="skill_ul">
           <li class="skill_li" style="--i:1;">
@@ -172,7 +290,7 @@
   </section>
   <section class="education padd-15" id="education">
     <h3 class="title">Educación</h3>
-    <div class="container_scroll">
+    <div class="container">
       <div class="card-scroll">
         <div class="fondo">
           <img class="img-fondo" src="/images/Academlo/Certificado-FullStack-Academlo.png">
@@ -329,7 +447,7 @@
   </section>
   <section class="experience padd-15" id="experience">
     <h3 class="title">Experiencia Laboral</h3>
-    <div class="container_scroll">
+    <div class="container">
       <div class="card-scroll">
         <div class="fondo">
           <img class="img-fondo" src="/images/Hidrocentro/Hidrocentro-fondo-Logo.png">
@@ -378,7 +496,6 @@
           </div>
         </div>
       </div>
-
       <div class="card-scroll">
         <div class="fondo">
           <img class="img-fondo" src="/images/TYS/Centro-Solano-Plaza.png">
@@ -467,7 +584,7 @@
     <div class="section-title padd-15">
       <h2 class="title">Portafolio</h2>
     </div>
-    <div class="container_card">
+    <div class="container">
       <div class="card_ini">
         <div class="card">
           <div class="card_front" width="100%"
@@ -497,7 +614,6 @@
                 <h4>Bcrypt, Cors, Dotenv, Ejs, Express, Express-validator, Jsonwebtoken Nodemailer, Pg, Pg-hstore,
                   Sequelize, Swagger, Nodemon</h4>
               </div>
-
               <div class="btn_card_front a_link">
                 <button class="btn">
                   <a href="https://dbdiagram.io/d/647be5e7722eb7749457f675" target="_blank">Diagram</a>
@@ -511,7 +627,7 @@
                 <button class="btn">
                   <a href="https://romy-garcia-proyect-final.onrender.com/docs/" target="_blank">Swagger</a>
                 </button>
-              </div>              
+              </div>
             </div>
           </div>
         </div>
@@ -764,103 +880,55 @@
       </div>
     </div>
   </section>
-
   <section class="cntct-section padd-15" id="contact">
-    <!-- <div class="section-title padd-15">
-      <h2 class="title">Contacta me</h2>
-    </div>     -->
-    <div class="cntct-container">
-      <h2>Contacta me</h2>
-      <div class="cntct-row100">
-        <!-- <div class="cntct-col row">
-          <div class="cntct-inputBox">
-            <div class="contact-info-item padd-15">
-              <div class="icon"><i class="fa fa-phone"></i></div>
-              <h4>Contacta me al</h4>
-              <p>+593-963291299</p>
+    <form class="cntct-container" action="https://formspree.io/f/mrgvpyew" method="post">
+      <div class="cntct-container">
+        <h2>Contacta me</h2>
+        <div class="cntct-row100">
+          <div class="cntct-col">
+            <div class="cntct-inputBox">
+              <input id="name" name="namEmpresa" type="text" required="required">
+              <span class="cntct-text">Nombre / Empresa</span>
+              <span class="cntct-line"></span>
             </div>
           </div>
-        </div> -->
-        <!-- <div class="cntct-col">
-          <div class="cntct-inputBox">
-            <input type="text" name="" required="required">
-            <span class="cntct-text">Last Name</span>
-            <span class="cntct-line"></span>
+          <div class="cntct-col">
+            <div class="cntct-inputBox">
+              <input id="email" name="Email" type="email" required>
+              <span class="cntct-text">Email</span>
+              <span class="cntct-line"></span>
+            </div>
+          </div>
+
+        </div>
+        <div class="cntct-row100">
+          <div class="cntct-col">
+            <div class="cntct-inputBox cntct-textarea">
+              <textarea name="mensaje" id="mensaje" required="required"></textarea>
+              <span class="cntct-text">Escribe tu mensaje aquí... </span>
+              <span class="cntct-line"></span>
+            </div>
           </div>
         </div>
-        <div class="cntct-col">
-          <div class="cntct-inputBox">
-            <input type="text" name="" required="required">
-            <span class="cntct-text">Email</span>
-            <span class="cntct-line"></span>
-          </div>
-        </div> -->
-        <!-- <div class="cntct-col">
-          <div class="cntct-inputBox">
-            <input type="text" name="" required="required">
-            <span class="cntct-text">Mobile</span>
-            <span class="cntct-line"></span>
-          </div>
-        </div> -->
-      </div>      
-      <div class="cntct-row100">
-        <div class="cntct-col">
-          <div class="cntct-inputBox">
-            <input type="text" name="" required="required">
-            <span class="cntct-text">First Name</span>
-            <span class="cntct-line"></span>
-          </div>
-        </div>
-        <div class="cntct-col">
-          <div class="cntct-inputBox">
-            <input type="text" name="" required="required">
-            <span class="cntct-text">Last Name</span>
-            <span class="cntct-line"></span>
-          </div>
-        </div>
-        <div class="cntct-col">
-          <div class="cntct-inputBox">
-            <input type="text" name="" required="required">
-            <span class="cntct-text">Email</span>
-            <span class="cntct-line"></span>
-          </div>
-        </div>
-        <div class="cntct-col">
-          <div class="cntct-inputBox">
-            <input type="text" name="" required="required">
-            <span class="cntct-text">Mobile</span>
-            <span class="cntct-line"></span>
-          </div>
+        <!-- <div class="cntct-row100 cntct-textarea">
+          <p>Con experiencia, formación académica y proyectos desafiantes, estoy dispuesto para aportar innovaciones, asumir retos y crecer con su equipo.</p>
+        </div>         -->
+
+        <div class="cntct-row100">
+          <button class="btn cntct-100">
+            <input class="cntct-input" type="submit" value="Enviar Mensaje">
+          </button>
         </div>
       </div>
-      <div class="cntct-row100">
-        <div class="cntct-col">
-          <div class="cntct-inputBox cntct-textarea">
-            <textarea required="required"></textarea>
-            <span class="cntct-text">Type Your Message Here...</span>
-            <span class="cntct-line"></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="cntct-row100">
-        <!-- <div class="cntct-col">
-          <input type="submit" value="send">
-        </div> -->
-        <button class="btn cntct-100">
-          <input class="cntct-input" type="submit" value="send">
-        </button>
-
-      </div>
-
-    </div>
+    </form>
   </section>
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <!-- <script src="style-switcher.js"></script> -->
-  <!-- <script src="script.js"></script> -->
-
+  <!-- <a href="https://api.whatsapp.com/send?phone=593963291299&text=Hola, queremos hablar contigo para una entrevista!">
+  <img src="./whatsapp.png" alt="">
+  Envianos un mensaje!
+</a> -->
 </body>
 
 </html>

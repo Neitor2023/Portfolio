@@ -9,6 +9,22 @@ window.addEventListener('scroll', function () {
   }
   lastScrollTop = scrollTop;
 })
+// ----------------- Cambia las diapositivas de la tarjeta de presentacion -----------------
+const CardButtOnenLink = document.querySelector('.CardButtOnen');
+function btnStar() {
+  CardButtOnenLink.classList.add('a');
+}
+function btnNext() {
+  CardButtOnenLink.classList.add('b');
+}
+function btnContinue() {
+  CardButtOnenLink.classList.add('c');
+}
+function btnEnd() {
+  CardButtOnenLink.classList.remove('a');
+  CardButtOnenLink.classList.remove('b');
+  CardButtOnenLink.classList.remove('c');
+}
 // ---------------------------
 // Esta función alternará la clase 'active' para activar y desactivar el botón contacta me
 function toggleActive() {
@@ -20,7 +36,7 @@ function toggleActive() {
 setInterval(toggleActive, 740);  
 // ------------------------------------
 // Esta función crea el fondo de comestas que van de abajo hacia arriba
-function lines() {
+function linesXXXXXXXXXXXXXXXXXXXXXXXXX() {
   let sizeW = Math.random() * 12;
   let duration = Math.random() * 3;
   let e = document.createElement('div');
@@ -87,20 +103,13 @@ item.forEach((i) =>
 i.addEventListener('click', addActiveClass));
 
 // --------------------------------------------------------------------
-// Esta función controla el modo oscuro
+// Esta funcion hace el cambio de modo noche y modo dia
+const darkModeIcon = document.querySelector(".modoIcon");
+const body = document.body;
 
-function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
-  const isDarkMode = document.body.classList.contains("dark-mode");
-  localStorage.setItem("dark-mode", isDarkMode);
-}
-
-// Verificar si hay una preferencia de tema guardada en localStorage
-
-const prefersDarkMode = JSON.parse(localStorage.getItem("dark-mode"));
-if (prefersDarkMode !== null) {
-  document.body.classList.toggle("dark-mode", prefersDarkMode);
-}
+darkModeIcon.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
+});
 
 // -----------------------------------------------------------------------
 // Esta funcion cambia el color de los texto segun la eleccion
@@ -147,5 +156,12 @@ function activeLink() {
 list.forEach((item) =>
   item.addEventListener('click', activeLink));
 
+// *********************** Can el boton de las primeras tarjetas cambia el contenidos *************
+// const oneButtonCardLink = document.querySelector('.oneButtonCard');
 
-
+// function btnStar() {
+//   oneButtonCardLink.classList.add('active');
+// }
+// function btnNext() {
+//   oneButtonCardLink.classList.remove('active');
+// }
