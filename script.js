@@ -36,7 +36,7 @@ function toggleActive() {
 setInterval(toggleActive, 740);  
 // ------------------------------------
 // Esta función crea el fondo de comestas que van de abajo hacia arriba
-function linesXXXXXXXXXXXXXXXXXXXXXXXXX() {
+function lines() {
   let sizeW = Math.random() * 12;
   let duration = Math.random() * 3;
   let e = document.createElement('div');
@@ -155,13 +155,3 @@ function activeLink() {
 }
 list.forEach((item) =>
   item.addEventListener('click', activeLink));
-
-// *********************** Can el boton de las primeras tarjetas cambia el contenidos *************
-// const oneButtonCardLink = document.querySelector('.oneButtonCard');
-
-// function btnStar() {
-//   oneButtonCardLink.classList.add('active');
-// }
-// function btnNext() {
-//   oneButtonCardLink.classList.remove('active');
-// }
